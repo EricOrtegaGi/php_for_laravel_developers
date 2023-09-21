@@ -1,4 +1,7 @@
 <?php
+
+use App\Models\Task;
+
 function greet() {
     $name = htmlspecialchars($_GET['name']);
     $surname = $_GET['surname'];
@@ -29,6 +32,6 @@ function fetchAllTasks($dbh){
     $statement->execute();
 
 
-    return $tasks = $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
+    return $tasks = $statement->fetchAll(PDO::FETCH_CLASS, Task::class);
 
 }

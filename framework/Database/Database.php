@@ -24,5 +24,6 @@ class Database
 
     }
     function fetchAllTasks($dbh){
+
     }
 }

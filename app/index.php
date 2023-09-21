@@ -3,7 +3,7 @@
 require 'helpers.php';
 require 'Task.php';
 require 'config.php';
-require 'Database.php';
+require 'framework/Database.php';
 $tasks = fetchAllTasks(connectDB($config));
 
 //$database = new Database(); -> no utilitzem amb laravel csi mai new -> DI i container

@@ -12,6 +12,7 @@ class Database
         $this->config = $config;
         $this->conection = new Conection($config);
     }
+
     function selectAll($table)
     {
         $dbh= $this->conection->connectDB();
@@ -23,7 +24,7 @@ class Database
 //        return fetchAllTasks($this->conection->connectDB());
 
     }
-    function fetchAllTasks($dbh){
+    function insert(){
 
     }
 }

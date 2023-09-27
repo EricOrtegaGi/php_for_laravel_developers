@@ -1,14 +1,12 @@
 <?php
 
-namespace Framework;
+namespace framework;
+
 use Exception;
 
 class App
 {
     private static $container = [];
-    // API
-    // BIND -> Setter -> Afegir un objecte nou a la meva app
-    //getters i setters
 
     public static function bind($key, $value)
     {

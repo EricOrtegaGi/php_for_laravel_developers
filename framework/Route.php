@@ -1,10 +1,6 @@
 <?php
 
 namespace framework;
-
-
-//NO -> $routes->routes -> Getter Setters
-//Si -> SET $routes->routes->define($rotues)
 use http\Exception\RuntimeException;
 class Router
 {
@@ -29,6 +25,10 @@ class Router
         if (!array_key_exists($uri,$this->rotues)) {
             require 'resources/views/errors/404.php';
             return $this;
+        }
+        if (!file_exists($this->rotues[$uri])){
+//            throw new RuntimeException("NO s'ha trobat el controllador:" . $this->rotues[$uri] );
+            dd("No s'ha trobat el controller:" . $this->routes[$uri]);
         }
         include $this->rotues[$uri];
         return $this;

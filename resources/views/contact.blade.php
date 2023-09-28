@@ -17,11 +17,10 @@
 <body>
 <nav>
     <ul>
-        <li><a href="/tasks.html">Tasques</a></li>
-        <li><a href="/users.html">Users</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/index.php">Home</a></li>
+        <li><a href="/users">Users</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/index">Home</a></li>
     </ul>
 </nav>
 <header>

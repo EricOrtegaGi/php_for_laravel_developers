@@ -17,7 +17,6 @@
 <body>
 <nav>
     <ul>
-        <li><a href="/tasks">Tasques</a></li>
         <li><a href="/users">Users</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/about">About</a></li>
@@ -25,26 +24,7 @@
     </ul>
 </nav>
 <header>
-
-    <h1><?=$greeting;?></h1>
-
-    <table>
-        <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>Description</th>
-            <th>Completed</th>
-        </tr>
-
-        <?php foreach ($tasks as $task):?>
-        <tr>
-            <td><?=$task->id;?></td>
-            <td><?=$task->title;?></td>
-            <td><?=$task->description;?></td>
-            <td><?=$task->completed;?></td>
-        </tr>
-        <?php endforeach; ?>
-    </table>
+    TODO USERS HERE
 </header>
 
 </body>

@@ -1,36 +1,33 @@
 <?php
 
 namespace framework;
-use http\Exception\RuntimeException;
-class Router
+
+class Route
 {
-    protected $rotues = [];
+    protected  $routes = [];
 
     public function register($route)
     {
-        $this->rotues[] = $route;
+        $this-> routes[]=$route;
     }
-
-    //CHAINING METHODS
 
     public function define($routes)
     {
-        $this->rotues = $routes;
+        $this-> routes=$routes;
         return $this;
     }
 
-
-    public function redirect($uri)
+    public function redirect($url)
     {
-        if (!array_key_exists($uri,$this->rotues)) {
-            require 'resources/views/errors/404.php';
+        if(!array_key_exists($url,$this->routes)){
+            require '../resources/views/errors/404.php';
             return $this;
         }
-        if (!file_exists($this->rotues[$uri])){
-//            throw new RuntimeException("NO s'ha trobat el controllador:" . $this->rotues[$uri] );
-            dd("No s'ha trobat el controller:" . $this->routes[$uri]);
+        if (!file_exists($this-> routes[$url])){
+            require '../resources/views/errors/404.php';
+            return $this;
         }
-        include $this->rotues[$uri];
+        require $this-> routes[$url];
         return $this;
     }
 }

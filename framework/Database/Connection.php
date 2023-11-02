@@ -7,7 +7,7 @@ class Connection
     {
         try {
             return new PDO(
-                $config['databasetype'] . ':host=' . $config['host'] . ';dbname=' . $config['name'],
+                $config['type'] . ':host=' . $config['host'] . ';dbname=' . $config['name'],
                 $config['user'],
                 $config['password']);
         }catch (\Exception $e){

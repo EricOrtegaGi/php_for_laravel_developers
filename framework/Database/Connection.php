@@ -1,17 +1,15 @@
 <?php
-namespace framework\Database;
+
+namespace Framework\Database;
+
 use PDO;
-class Connection
-{
+
+class Connection {
     public static function make($config)
     {
-        try {
-            return new PDO(
-                $config['type'] . ':host=' . $config['host'] . ';dbname=' . $config['name'],
-                $config['user'],
-                $config['password']);
-        }catch (\Exception $e){
-            echo 'Error de connexio en la base de dades';
-        }
+        $dsn = $config['driver'].':host='.$config['host'].';dbname='.$config['database'];
+        return new PDO(
+            $dsn, $config['user'], $config['password']
+        );
     }
 }

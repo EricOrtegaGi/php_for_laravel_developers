@@ -1,11 +1,11 @@
 <?php
 
-return [
+return $config = [
     'database' => [
-        'user' => $_ENV['DB_USERNAME'],
-        'password' => $_ENV['DB_PASSWORD'],
-        'type' => $_ENV['DB_CONNECTION'],
-        'host' => $_ENV['DB_HOST'],
-        'name' => $_ENV['DB_DATABASE'],
+        'driver'   =>    $_ENV['DB_CONNECTION'],
+        'host'     =>    $_ENV['DB_HOST'],
+        'user'     =>    $_ENV['DB_USERNAME'],
+        'password' =>    $_ENV['DB_PASSWORD'],
+        'database' =>    $_ENV['DB_DATABASE']
     ]
-];
+ ];

@@ -1,9 +1,9 @@
 {
-    "name": "ericortegagi/php_for_laravel_developers",
-    "description": "Bla bla",
+    "name": "ism1tha/mp09_projecte_php_1",
+    "description": "Desenvolupament del Projecte 1 en PHP amb Laravel per a MP09 (2023-2024)",
     "type": "project",
     "autoload": {
-        "classmap": [
+        "classmap":[
             "./"
         ],
         "files": [
@@ -12,12 +12,11 @@
     },
     "authors": [
         {
-            "name": "Eric Ortega GIsbert",
-            "email": "ericortega@iesebre.com"
+            "name": "Ism1tha",
+            "email": "xgalan@hotmail.com"
         }
     ],
     "require": {
-      "ext-pdo": "*",
         "vlucas/phpdotenv": "^5.5"
     }
 }

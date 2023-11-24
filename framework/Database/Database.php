@@ -1,27 +1,22 @@
 <?php
 
-namespace framework\Database;
-use PDO;
+namespace Framework\Database;
 
-class Database
-{
-    protected $pdo;
+use PDO;
+use App\Models\Task;
+
+class Database {
+
+    static public $pdo;
 
     public function __construct($pdo)
     {
-       $this->pdo = $pdo;
+        static::$pdo = $pdo;
     }
 
-    public function selectAll($table)
-    {
-        $statement= $this->pdo->prepare("SELECT * FROM $table ;");
-
-        $statement->execute();
-
-        return $statement->fetchAll(PDO::FETCH_CLASS);
-
-    }
-    function insert(){
-
+    public static function selectAll($table) {
+        $query = static::$pdo->prepare("SELECT * from $table;");
+        $query->execute();
+        return $query->fetchAll(PDO::FETCH_CLASS, Task::class);
     }
 }

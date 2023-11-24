@@ -1,22 +1,21 @@
 <?php
 
-use Dotenv\Dotenv;
-use framework\App;
-use framework\Database\Connection;
-use framework\Database\Database;
-use framework\Route;
+namespace Framework;
 
-$routes = require '../routes.php';
+use Framework\App;
+use Framework\Database\Connection;
+use Framework\Database\Database;
+use Framework\Router;
 
-$dotenv = Dotenv::createImmutable(__DIR__.'/..');
+$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
 $dotenv->load();
 
-App::bind('config', require '../config.php');
+$routes = require 'routes.php';
+
+App::bind('config', require './config.php');
 
 App::bind('database', new Database(
     Connection::make(App::get('config')['database'])
 ));
 
-App::bind('router', (new Route())->define($routes));
-
-
+App::bind('router', (new Router())->define($routes));

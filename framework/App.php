@@ -1,11 +1,9 @@
 <?php
 
-namespace framework;
+namespace Framework;
 
-use Exception;
+class App {
 
-class App
-{
     private static $container = [];
 
     public static function bind($key, $value)
@@ -13,13 +11,10 @@ class App
         static::$container[$key] = $value;
     }
 
-
-        public static function get($key)
-        {
-            if (!array_key_exists($key, static::$container)) {
-                throw new Exception("No {$key} is bound in the container. ");
-            }
-            return static::$container[$key];
-        }
-
+    public static function get($key)
+    {
+        if (! array_key_exists($key, static::$container))
+            throw new \Exception("No existeix {$key} en el contenidor.");
+        return static::$container[$key];
+    }
 }

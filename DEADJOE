@@ -1,0 +1,36 @@
+
+*** These modified files were found in JOE when it aborted on Fri Dec  8 17:51:43 2023
+*** JOE was aborted by UNIX signal 1
+
+*** File '/home/alumne/Documents/Code/EricOrtegaGi/php_for_laravel_developers/.git/COMMIT_EDITMSG'
+
+# Introduïu el missatge de comissió delsostres canvis.
+# S'ignoraran les línies que comencin amb «#». Un missatge de
+# comissió buit avorta la comissió.
+#
+# En la branca main
+# La vostra branca està al dia amb «origin/main».
+#
+# Canvis a cometre:
+#	modificat:        resources/views/layouts/main/components/footer.php
+#	modificat:        resources/views/layouts/main/components/nav.php
+#
+
+*** File '(Unnamed)'
+.bashrc
+.zshrc
+.zshrc
+.bashrc
+/home/alumne/Documents/Code/Desenv-Aplicacions-Multiplataforma/2DAM_2023_24/.git/COMMIT_EDITMSG
+/home/alumne/Documents/Code/Desenv-Aplicacions-Multiplataforma/2DAM_2023_24/.git/COMMIT_EDITMSG
+/home/alumne/Documents/Code/Desenv-Aplicacions-Multiplataforma/2DAM_2023_24/.git/COMMIT_EDITMSG
+/home/alumne/Documents/Code/EricOrtegaGi/.git/COMMIT_EDITMSG
+/home/alumne/Documents/Code/EricOrtegaGi/.git/COMMIT_EDITMSG
+/home/alumne/Documents/Code/EricOrtegaGi/php_for_laravel_developers/.git/TAG_EDITMSG
+/home/alumne/Documents/Code/EricOrtegaGi/php_for_laravel_developers/.git/COMMIT_EDITMSG
+
+*** File '* Startup Log *'
+Processing '/etc/joe/editorrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
